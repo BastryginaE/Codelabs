@@ -45,11 +45,11 @@ def calc (a, x):
 
 # цикл расчета с изменяющимся значением шага
 
-figure = 0
-while figure <= step_quantity:
+numeral = 0
+while numeral <= step_quantity:
     calc(a, x)
     x += step
     if x > xMax:
         print('Величина X не может превышать максимальное значение.')
         break
-    figure += 1
+    numeral += 1
