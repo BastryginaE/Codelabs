@@ -1,3 +1,4 @@
+#Lab_2
 from math import sin, log, pi
 
 x = int(input('Enter x: '))
