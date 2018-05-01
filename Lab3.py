@@ -16,7 +16,7 @@ while xMin >= xMax:
 calculate = str(input('G функция G\nF функция F\nY функция Y\nEnter function: '))
 x = xMin
 
-# функцция проверки данных, расчета и вывода на экран
+# функция проверки данных, расчета и вывода на экран
 
 def calc (a, x):
 
