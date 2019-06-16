@@ -1,11 +1,27 @@
-# Lab_1
-from math import sin, log, pi
+class Calculator:
+    def __init__(self, a,b,x):
+        if x == '+':
+            result_c = a + b
+            print(('Equals to {}'.format(result_c)))
+        elif x == '-':
+            result_c = a - b
+            print(('Equals to {}'.format(result_c)))
+        elif x == '*':
+            result_c = a * b
+            print(('Equals to {}'.format(result_c)))
+        elif x == '/':
+            try:
+                result_c = a / b
+                print(('Equals to {}'.format(result_c)))
+            except(ZeroDivisionError):
+              print(('You cannot use 0. Use another number'))
 
+2
+c = 'Next'
+while c=='Next':
+    a=float(input('Insert a:'))
+    b=float(input('Insert b:'))
+    x=str(input('Insert the symbol:'))
+    Calculator(a,b,x)
 
-x = float(input('Enter x: '))
-a = float(input('Enter a: '))
-G = -(8*(7 * a**2 + 34 * a * x - 5 * x**2)/(27 * a**2 + 33 * a * x + 10 * x**2))
-F = -(1/(sin(72 * a**2 - 5 * a * x - 12 * x**2 - pi/2)))
-Y = log(42 * a**2 + 53 * a * x + 15 * x**2 + 1)
-
-print ('G = {}, F = {}, Y = {}'.format(G, F, Y))
+    c=str(input('Insert Next to continue or Stop to cut off'))
